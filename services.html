@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos services professionnels de vente, maintenance et conseil en équipement agricole et jardinage à Ait Melloul">
+    <title>Nos Services - BIOUGRA MOTOCULTURE</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0052CC',
+                        secondary: '#0747A6',
+                        accent: '#172B4D',
+                        light: '#F4F5F7'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Top Banner -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone"></i> +212 6 65 99 90 62</span>
+                <span><i class="fas fa-envelope"></i> biougramotoculture@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-map-marker-alt"></i> Bd Moukaouama, quartier Admin -ZA 87200 Inezgane Aït Melloul - Maroc</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-primary">
+                    BIOUGRA MOTOCULTURE
+                </a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-accent hover:text-primary transition">Accueil</a>
+                    <a href="products.html" class="text-accent hover:text-primary transition">Produits</a>
+                    <a href="services.html" class="text-primary font-semibold">Services</a>
+                    <a href="contact.html" class="text-accent hover:text-primary transition">Contact</a>
+                </nav>
+                <button class="md:hidden mobile-menu-button" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay fixed inset-0 bg-black opacity-0 z-40 hidden transition-all duration-300 ease-in-out"></div>
+                <!-- Mobile Menu -->
+                <div class="mobile-menu fixed right-0 top-0 h-full w-80 bg-white z-50 transform translate-x-full transition-all duration-300 ease-in-out shadow-2xl">
+                    <div class="h-full overflow-y-auto">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-8">
+                                <span class="text-2xl font-bold text-primary">BIOUGRA MOTOCULTURE</span>
+                                <button class="close-menu text-3xl text-gray-600 hover:text-primary">&times;</button>
+                            </div>
+                            <nav class="flex flex-col space-y-6">
+                                <a href="index.html" class="text-xl text-accent hover:text-primary transition py-2">Accueil</a>
+                                <a href="products.html" class="text-xl text-accent hover:text-primary transition py-2">Produits</a>
+                                <a href="services.html" class="text-xl text-accent hover:text-primary transition py-2">Services</a>
+                                <a href="contact.html" class="text-xl text-accent hover:text-primary transition py-2">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div class="bg-light py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-accent text-center">Nos Services</h1>
+            <p class="text-gray-600 text-center mt-4">Des solutions complètes pour répondre à tous vos besoins</p>
+        </div>
+    </div>
+
+    <!-- Main Services -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="https://images.pexels.com/photos/5749147/pexels-photo-5749147.jpeg" 
+                             alt="Vente de Matériel" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-white mb-2">Vente de Matériel</h3>
+                                <p class="text-white/80">Large gamme d'équipements professionnels pour l'agriculture et le jardinage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Équipements de grandes marques
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Conseil personnalisé
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Démonstration sur site
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg" 
+                             alt="Service Après-Vente" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-white mb-2">Service Après-Vente</h3>
+                                <p class="text-white/80">Une équipe technique qualifiée pour l'entretien et la réparation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Maintenance préventive
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Réparation rapide
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary mr-2"></i>
+                                Pièces d'origine garanties
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Services Complémentaires</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-truck text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Livraison</h3>
+                    <p class="text-gray-600 mb-4">
+                        Service de livraison professionnel pour tous vos équipements, partout au Maroc.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Livraison rapide
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Installation sur site
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Suivi en temps réel
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Conseil Technique</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expertise et accompagnement pour choisir l'équipement adapté à vos besoins.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Analyse des besoins
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Solutions personnalisées
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Formation utilisation
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Location d'Équipements</h3>
+                    <p class="text-gray-600 mb-4">
+                        Location courte et longue durée d'équipements professionnels.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Matériel professionnel
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Tarifs flexibles
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2"></i>
+                            Maintenance incluse
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="bg-primary rounded-lg p-8 md:p-12">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold text-white mb-4">Besoin d'un Service ?</h2>
+                    <p class="text-white/80 mb-8">
+                        Contactez-nous dès maintenant pour discuter de vos besoins et obtenir un devis personnalisé.
+                    </p>
+                    <a href="contact.html" class="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-light transition duration-300">
+                        Nous Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BIOUGRA MOTOCULTURE</h3>
+                    <p class="text-gray-300">
+                        Votre partenaire de confiance en équipement agricole et jardinage à Ait Melloul.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liens Rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Accueil</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-white transition">Produits</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Nos Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition">Vente de matériel</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition">Service après-vente</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition">Conseil technique</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition">Livraison</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Horaires d'ouverture</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Lundi - Vendredi: 9h - 18h</li>
+                        <li>Samedi: 9h - 16h</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 BIOUGRA MOTOCULTURE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
