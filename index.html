@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOUGRA MOTOCULTURE - Vente d'outillage et jardinage à Ait Melloul</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0052CC',
+                        secondary: '#0747A6',
+                        accent: '#172B4D',
+                        light: '#F4F5F7'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <!-- Top Banner -->
+    <div class="bg-primary text-white text-sm py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone"></i> +212 6 65 99 90 62</span>
+<span><i class="fas fa-envelope"></i> biougramotoculture@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-map-marker-alt"></i> Ait Melloul, Maroc</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">
+                    BIOUGRA MOTOCULTURE
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="text-accent hover:text-primary transition">Accueil</a>
+                    <a href="#" class="text-accent hover:text-primary transition">Produits</a>
+                    <a href="services.html" class="text-accent hover:text-primary transition">Services</a>
+                    <a href="#" class="text-accent hover:text-primary transition">Contact</a>
+                </nav>
+                <button class="md:hidden mobile-menu-button" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay fixed inset-0 bg-black opacity-0 z-40 hidden transition-all duration-300 ease-in-out"></div>
+                <!-- Mobile Menu -->
+                <div class="mobile-menu fixed right-0 top-0 h-full w-80 bg-white z-50 transform translate-x-full transition-all duration-300 ease-in-out shadow-2xl">
+                    <div class="h-full overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-8">
+                            <span class="text-2xl font-bold text-primary">BIOUGRA MOTOCULTURE</span>
+                            <button class="close-menu text-3xl text-gray-600 hover:text-primary">&times;</button>
+                        </div>
+                        <nav class="flex flex-col space-y-6">
+                            <a href="index.html" class="text-xl text-accent hover:text-primary transition py-2">Accueil</a>
+                            <a href="products.html" class="text-xl text-accent hover:text-primary transition py-2">Produits</a>
+                            <a href="services.html" class="text-xl text-accent hover:text-primary transition py-2">Services</a>
+                            <a href="contact.html" class="text-xl text-accent hover:text-primary transition py-2">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-gradient-to-r from-primary to-secondary">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="text-white max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Votre Partenaire en Motoculture à Ait Melloul
+                </h1>
+                <p class="text-xl mb-8">
+                    Découvrez notre large gamme d'équipements et d'outillage professionnel pour l'agriculture et le jardinage
+                </p>
+                <button class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-light transition">
+                    Découvrir nos produits
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-truck text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Livraison à Domicile</h3>
+                    <p class="text-gray-600">Livraison assurée partout au Maroc</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-tools text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Service Après-Vente</h3>
+                    <p class="text-gray-600">Une équipe d'experts à votre service</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-shield-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Garantie Qualité</h3>
+                    <p class="text-gray-600">Des produits de marques reconnues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nos Catégories de Produits</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/3010771/pexels-photo-3010771.jpeg" 
+                         alt="Outillage de Jardin" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Outillage de Jardin</h3>
+                            <a href="#" class="text-white hover:text-primary transition">Découvrir →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/5733823/pexels-photo-5733823.jpeg" 
+                         alt="Matériel d'Atelier" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Matériel d'Atelier</h3>
+                            <a href="#" class="text-white hover:text-primary transition">Découvrir →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.pexels.com/photos/5749147/pexels-photo-5749147.jpeg" 
+                         alt="Équipement Agricole" 
+                         class="w-full h-64 object-cover group-hover:scale-110 transition duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Équipement Agricole</h3>
+                            <a href="#" class="text-white hover:text-primary transition">Découvrir →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
+                        <p class="text-gray-600 mb-6">
+                            Notre équipe est à votre disposition pour répondre à toutes vos questions.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-map-marker-alt text-primary mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold">Adresse</h3>
+                                    <p class="text-gray-600">Bd Moukaouama, quartier Admin -ZA 87200 Inezgane Aït Melloul - Maroc</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-phone text-primary mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold">Téléphone</h3>
+                                    <p class="text-gray-600">+212 6 65 99 90 62</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-envelope text-primary mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold">Email</h3>
+                                    <p class="text-gray-600">biougramotoculture@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-secondary transition">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BIOUGRA MOTOCULTURE</h3>
+                    <p class="text-gray-300">
+                        Votre partenaire de confiance en équipement agricole et jardinage à Ait Melloul.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liens Rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Accueil</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Produits</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Nos Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Vente de matériel</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Service après-vente</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Conseil technique</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Livraison</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Horaires d'ouverture</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Lundi - Vendredi: 9h - 18h</li>
+                        <li>Samedi: 9h - 16h</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 BIOUGRA MOTOCULTURE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
